@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark-grey: #1F1F1F;
+    --black: #141414;
+    --neon-green: #C4F82A;
+    --grey: #333333;
+}
+body{
+    font-family: "Inter", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--black);
+    font-size: 14px;
+}
+.container{
+    background-color: var(--dark-grey);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 90vw;
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-pic{
+    border-radius: 50%;
+    width: 88px;
+    height: auto;
+    margin-bottom: 24px;
+}
+.name-location{
+    margin-bottom: 24px;
+    text-align: center;
+}
+.name{
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 24px;
+}
+.location{
+    color: var(--neon-green);
+    font-weight: bold;
+}
+.bio{
+    margin-bottom: 24px;
+    text-align: center;
+}
+.links-section{
+    list-style: none;
+}
+.link{
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    background-color: var(--grey);
+    border-radius: 8px;
+    padding: 14px 12px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.links-section .link:not(:last-child){
+    margin-bottom: 16px;
+}
+@media (min-width: 400px){
+    .container{
+        width: 384px;
+        padding: 40px;
+    }
+    .link:hover{
+        background-color: var(--neon-green);
+        color: var(--grey);
+        cursor: pointer;
+    }
+}
+.attribution{
+    margin-top: 24px;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
